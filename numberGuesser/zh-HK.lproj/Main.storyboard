@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bIT-KS-SBq">
-                                <rect key="frame" x="105" y="198" width="204" height="31"/>
+                                <rect key="frame" x="105" y="632" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="H7i-gs-vOl"/>
                                 </constraints>
@@ -31,39 +31,39 @@
                                     <action selector="setGuess:" destination="BYZ-38-t0r" eventType="valueChanged" id="LwR-qe-MaS"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-EY-hbT">
-                                <rect key="frame" x="201.5" y="169" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vu-VI-NVF">
-                                <rect key="frame" x="172.5" y="385" width="69" height="31"/>
+                                <rect key="frame" x="164.5" y="385" width="85" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Guess!"/>
+                                <buttonConfiguration key="configuration" style="filled" title="C-Guess!"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CH5-jx-5p7"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="adH-UY-qyb">
-                                <rect key="frame" x="104" y="484" width="206" height="32"/>
+                                <rect key="frame" x="80" y="484" width="254" height="32"/>
                                 <segments>
-                                    <segment title="easy"/>
-                                    <segment title="medium"/>
-                                    <segment title="hard"/>
+                                    <segment title="C-easy"/>
+                                    <segment title="C-medium"/>
+                                    <segment title="C-hard"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeDiff:" destination="BYZ-38-t0r" eventType="valueChanged" id="rlX-nW-d45"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hj-ah-s0r">
-                                <rect key="frame" x="146.5" y="255" width="121" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C-Congratulations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hj-ah-s0r">
+                                <rect key="frame" x="136.5" y="255" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the slider to Guess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsU-7T-s7S">
-                                <rect key="frame" x="118.5" y="116" width="177" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C-Use the slider to Guess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsU-7T-s7S">
+                                <rect key="frame" x="109" y="573" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-EY-hbT">
+                                <rect key="frame" x="201.5" y="187" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,18 +74,21 @@
                         <constraints>
                             <constraint firstItem="adH-UY-qyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1N2-hC-3PT"/>
                             <constraint firstItem="adH-UY-qyb" firstAttribute="top" secondItem="2Vu-VI-NVF" secondAttribute="bottom" constant="68" id="2UI-1l-8SK"/>
+                            <constraint firstItem="1hj-ah-s0r" firstAttribute="top" secondItem="U9e-EY-hbT" secondAttribute="bottom" constant="47" id="2ez-gr-ad0"/>
                             <constraint firstItem="U9e-EY-hbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ne-ac-OZK"/>
                             <constraint firstItem="2Vu-VI-NVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7sK-iE-fdH"/>
-                            <constraint firstItem="U9e-EY-hbT" firstAttribute="top" secondItem="RsU-7T-s7S" secondAttribute="bottom" constant="32" id="9mm-MZ-oYG"/>
                             <constraint firstItem="2Vu-VI-NVF" firstAttribute="top" secondItem="KOX-eT-JL3" secondAttribute="bottom" constant="67" id="9ue-OL-bdV"/>
-                            <constraint firstItem="bIT-KS-SBq" firstAttribute="top" secondItem="U9e-EY-hbT" secondAttribute="bottom" constant="8" symbolic="YES" id="A6v-OS-ld4"/>
-                            <constraint firstItem="1hj-ah-s0r" firstAttribute="top" secondItem="bIT-KS-SBq" secondAttribute="bottom" constant="27" id="Oln-9Y-lZO"/>
-                            <constraint firstItem="RsU-7T-s7S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="Rrc-Dp-BFK"/>
+                            <constraint firstItem="KOX-eT-JL3" firstAttribute="top" secondItem="1hj-ah-s0r" secondAttribute="bottom" constant="21" id="EYX-Lc-0Eo"/>
+                            <constraint firstItem="2Vu-VI-NVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fsd-CZ-XQc"/>
+                            <constraint firstItem="RsU-7T-s7S" firstAttribute="top" secondItem="adH-UY-qyb" secondAttribute="bottom" constant="58" id="Pv2-lF-q6R"/>
+                            <constraint firstItem="U9e-EY-hbT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="143" id="V0p-Fw-nJK"/>
                             <constraint firstItem="KOX-eT-JL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9f-Me-BXu"/>
                             <constraint firstItem="RsU-7T-s7S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aE0-Vj-ZRe"/>
                             <constraint firstItem="1hj-ah-s0r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQL-0b-M29"/>
+                            <constraint firstItem="RsU-7T-s7S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3c-Y6-fQi"/>
                             <constraint firstItem="bIT-KS-SBq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sd2-np-L8Q"/>
-                            <constraint firstItem="KOX-eT-JL3" firstAttribute="top" secondItem="bIT-KS-SBq" secondAttribute="bottom" constant="69" id="znY-Nu-iLz"/>
+                            <constraint firstItem="bIT-KS-SBq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5o-cf-WmZ"/>
+                            <constraint firstItem="bIT-KS-SBq" firstAttribute="top" secondItem="RsU-7T-s7S" secondAttribute="bottom" constant="38" id="xUG-6Z-70D"/>
                         </constraints>
                     </view>
                     <connections>
